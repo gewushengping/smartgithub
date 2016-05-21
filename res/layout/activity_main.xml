@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/mian_first" 
+    tools:context=".MainActivity" >
+  <!-- 第一个TextView是接收 显示框 -->
+    <TextView
+        android:id="@+id/receiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize= "20sp"
+        android:text="@string/hello_world" />
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiveTextView" 
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="50dp"
+        android:textSize= "15sp"
+        android:text="连接" />
+    
+    
+    
+        <!--  android:layout_alignRight="@+id/textView"这里是与textView右对齐的意思 -->
+        <!-- android:layout_alignBaseline="@+id/editText1" 这里的意思是这个文本框必须与旁边的editText1的英文单词基线对其-->
+        <!-- android:layout_alignBottom="@+id/editText1与editText1的下边缘对其" -->
+       
+      <!-- android:layout_alignRight="@+id/button1" -->
+
+  
+
+   
+    <Button
+        android:id="@+id/sendbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/connect"
+        android:layout_below="@+id/connect"
+        android:layout_marginTop="15dp"
+        android:textSize= "15sp"
+        android:text="发送" />
+    <EditText
+        android:id="@+id/sendeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sendbutton"
+        android:layout_below="@+id/sendbutton"
+        android:layout_marginLeft="24dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/devicemanagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sendbutton"
+        android:layout_below="@+id/sendeditText"
+        android:layout_marginTop="32dp"
+        android:text="Button" />
+
+</RelativeLayout>
+<!--andriod:id="@+id/textView" 是给他的ID号起了一个名字 -->

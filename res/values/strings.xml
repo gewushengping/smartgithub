@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">smart</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">he!</string>
+    
+<!-- string name="hello_world"这里是定义了一个string 型的变量 变量的值是hellworld -->
+</resources>
